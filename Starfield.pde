@@ -1,5 +1,6 @@
-double size = 1;
+double holeSize = 1;
 int newBall = 0;
+
 class Particle{
 int myColor, paritcleSize;
 double angle, speed, myX, myY;
@@ -56,13 +57,13 @@ for (int i = 0; i < WardellStephenCurryII.length; i++){
   ellipse(250, 250, (int)size, (int)size);
   
 }
-if (size == 200 && newBall < WardellStephenCurryII.length){
+if (holeSize == 200 && newBall < WardellStephenCurryII.length){
   WardellStephenCurryII[newBall] = new StephBall();
 } 
 
-size += 1;
-if (size > 200){
-size = 1;
+holeSize += 1;
+if (holeSize > 200){
+holeSize = 1;
 if (newBall < WardellStephenCurryII.length)
 newBall++;
 }
