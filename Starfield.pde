@@ -22,7 +22,7 @@ myY += Math.sin(angle) * speed;
 void show(){
 fill(myColor);
 noStroke();
-ellipse((float)myX,(float)myY,paritcleSize,paritcleSize);
+ellipse((int)myX,(int)myY,paritcleSize,paritcleSize);
 }
 
 }//end of particle class
@@ -53,7 +53,7 @@ for (int i = 0; i < WardellStephenCurryII.length; i++){
   WardellStephenCurryII[i].myY = Math.random() * 50 + 225;
   }
   fill(0);
-  ellipse(250, 250, (float)size, (float)size);
+  ellipse(250, 250, (int)size, (int)size);
   
 }
 if (size == 200 && newBall < WardellStephenCurryII.length){
