@@ -1,4 +1,4 @@
-double holeSize = 1;
+double holeSize = 0.5;
 int newBall = 0;
 
 class Particle{
@@ -54,14 +54,14 @@ for (int i = 0; i < WardellStephenCurryII.length; i++){
   WardellStephenCurryII[i].myY = Math.random() * 50 + 225;
   }
   fill(0);
-  ellipse(250, 250, (int)holeSize, (int)holeSize);
+  ellipse(250, 250, (float)holeSize, (float)holeSize);
   
 }
 if (holeSize == 200 && newBall < WardellStephenCurryII.length){
   WardellStephenCurryII[newBall] = new StephBall();
 } 
 
-holeSize += 1;
+holeSize += 0.5;
 if (holeSize > 200){
 holeSize = 1;
 if (newBall < WardellStephenCurryII.length)
