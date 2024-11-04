@@ -54,7 +54,7 @@ for (int i = 0; i < WardellStephenCurryII.length; i++){
   WardellStephenCurryII[i].myY = Math.random() * 50 + 225;
   }
   fill(0);
-  ellipse(250, 250, (int)size, (int)size);
+  ellipse(250, 250, (int)holeSize, (int)holeSize);
   
 }
 if (holeSize == 200 && newBall < WardellStephenCurryII.length){
